@@ -9,6 +9,7 @@ function nowServing(katzDeliLine) {
   if (katzDeliLine === 0) {
     return 'There is nobody waiting to be served!';
   } else {
-    return katzDeliLine.splice(0,1);
+    let nowServing = katzDeliLine.splice(0,1);
+    return `Currently serving ${nowServing}.`;
   }
 }
